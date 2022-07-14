@@ -1,0 +1,882 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@300&family=The+Nautigal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #252222;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #575151;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+body {
+  background: #252222;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.home {
+  margin: 0;
+  width: 100%;
+  background: url(../image/xx.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 90vh;
+  padding-bottom: 5rem;
+}
+
+.home .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.3rem 4%;
+}
+
+.home .header .navbar a {
+  font-size: 1rem;
+  color: rgba(215, 190, 78, 0.909);
+  display: inline-block;
+  margin-left: 1.3rem;
+}
+
+.home .header .navbar a:hover {
+  color: white;
+}
+
+.home .content {
+  text-align: center;
+  margin: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 200px;
+}
+
+.home .content h3 {
+  font-size: 3.5vw;
+  font-family: "Roboto Condensed", sans-serif;
+  letter-spacing: 10px;
+  color: white;
+}
+
+.home .content p {
+  margin: 1rem auto;
+  font-size: 1rem;
+  color: wheat;
+  line-height: 2;
+}
+
+.logo {
+  margin-right: 20rem;
+  font-size: 2.5rem;
+  color: white;
+}
+
+.logo:hover {
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.btnn {
+  background: none;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  border: 0.1rem solid white;
+  border-radius: 5rem;
+  cursor: pointer;
+}
+
+.btnn:hover {
+  border: 0.2rem solid rgba(215, 190, 78, 0.909);
+  color: rgba(215, 190, 78, 0.909);
+  background: none;
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+.menu .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+}
+
+.menu .box-container .box {
+  overflow: hidden;
+  background: none;
+}
+
+.menu .box-container .box:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.menu .box-container .box .image {
+  height: 15rem;
+  overflow: hidden;
+  width: 100%;
+}
+
+.menu .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu .box-container .box .contentt {
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu .box-container .box .contentt h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.menu .box-container .box .contentt p {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.menu .box-container .box .contentt a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 0.5em;
+}
+
+.menu .box-container .box .contentt a:hover i {
+  padding-left: 1rem;
+}
+
+.menu .box-container .box .contentt i {
+  padding-right: 0.5rem;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+}
+
+.about .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.1rem;
+  color: white;
+  border: white;
+  border-radius: 5rem;
+  cursor: pointer;
+  background: rgba(215, 190, 78, 0.909);
+}
+
+.about .btn:hover {
+  color: rgba(215, 190, 78, 0.909);
+  background: white;
+}
+
+.about .image-left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+}
+
+.about .image-left img {
+  width: 100%;
+}
+
+.about .contenttt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  margin-bottom: 5rem;
+}
+
+.about .contenttt h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 2rem;
+}
+
+.about .contenttt h5 {
+  color: rgba(215, 190, 78, 0.909);
+  font-size: 2rem;
+  letter-spacing: 6px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 0.5em;
+  margin-top: 0.5rem;
+  font-family: "The Nautigal", cursive;
+}
+
+.about .contenttt p {
+  margin-top: 0.5rem;
+  padding: 1rem 0;
+  font-size: 1rem;
+  color: white;
+}
+
+.services {
+  margin: 0;
+  margin-top: 9rem;
+  width: 100%;
+  background: url(../image/bg.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.services .heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.services .heading span {
+  margin-top: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.services .heading h1 {
+  margin-top: 30px;
+  font-size: 1.7rem;
+  color: rgba(215, 190, 78, 0.909);
+  font-family: "The Nautigal", cursive;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 0.4em;
+}
+
+.services .more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.services .more-btn .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  color: white;
+  border: 0.1rem solid rgba(215, 190, 78, 0.909);
+  border-radius: 5rem;
+  cursor: pointer;
+  background: rgba(215, 190, 78, 0.909);
+}
+
+.services .more-btn .btn:hover {
+  border: 0.2rem solid rgba(215, 190, 78, 0.909);
+  color: rgba(215, 190, 78, 0.909);
+  background: none;
+}
+
+.services .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(17rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: 1rem;
+}
+
+.services .box-container .box {
+  background: none;
+  overflow: hidden;
+}
+
+.services .box-container .box .image {
+  overflow: hidden;
+  width: 100%;
+}
+
+.services .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  outline: 0.5px solid rgba(215, 190, 78, 0.909);
+  outline-offset: -9px;
+}
+
+.services .box-container .box .content {
+  text-align: center;
+}
+
+.services .box-container .box .content h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  color: white;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 0.6em;
+}
+
+.services .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.reviews {
+  margin: 0;
+  width: 100%;
+  background: url(../image/coffe2.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+}
+
+.reviews .heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.reviews .heading span {
+  margin-top: 30px;
+  color: white;
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.reviews .heading h1 {
+  margin-top: 30px;
+  font-size: 1.7rem;
+  color: rgba(215, 190, 78, 0.909);
+  font-family: "The Nautigal", cursive;
+  letter-spacing: 4px;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 0.4em;
+}
+
+.reviews .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+}
+
+.reviews .box-container .box {
+  background: #252222;
+  overflow: hidden;
+  width: 350px;
+  padding: 2rem;
+}
+
+.reviews .box-container .box .image {
+  overflow: hidden;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.reviews .box-container .box .image img {
+  border-radius: 50%;
+  height: 50%;
+  width: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.reviews .box-container .box .content {
+  text-align: center;
+}
+
+.reviews .box-container .box .content span {
+  font-size: 18px;
+  color: orange;
+}
+
+.reviews .box-container .box .content h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 1.3rem;
+  color: white;
+  font-family: "The Nautigal", cursive;
+  letter-spacing: 5px;
+}
+
+.reviews .box-container .box .content p {
+  padding: 1rem 0;
+  font-size: 0.9rem;
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.form {
+  margin: 0;
+  width: 100%;
+  background: url(../image/table.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.form .box {
+  background: #252222;
+  width: 450px;
+}
+
+.form .box .content {
+  padding: 2rem;
+}
+
+.form .box .content h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.form .box .content p {
+  font-family: "The Nautigal", cursive;
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  padding: 1rem 0;
+  font-size: 2rem;
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.form .box .field1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  padding: 1rem;
+}
+
+.form .box .field1 .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form .box .field1 .date,
+.form .box .field1 .time,
+.form .box .field1 .person {
+  margin-right: 10px;
+}
+
+.form .box .field1 input {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+.form .box .field1 ::-webkit-input-placeholder {
+  color: white;
+}
+
+.form .box .field1 :-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .field1 ::-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .field1 ::placeholder {
+  color: white;
+}
+
+.form .box .field2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+
+.form .box .field2 .field {
+  height: 45px;
+  width: 100%;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form .box .field2 .name,
+.form .box .field2 .email {
+  margin-right: 10px;
+}
+
+.form .box .field2 input {
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 10px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+}
+
+.form .box .field2 ::-webkit-input-placeholder {
+  color: white;
+}
+
+.form .box .field2 :-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .field2 ::-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .field2 ::placeholder {
+  color: white;
+}
+
+.form .box .message {
+  padding: 2rem;
+}
+
+.form .box .message textarea {
+  text-align: center;
+  height: 200px;
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 6px;
+  outline: none;
+  padding: 0 5px;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  background-color: black;
+  padding-top: 50px;
+  resize: none;
+}
+
+.form .box .message ::-webkit-input-placeholder {
+  color: white;
+}
+
+.form .box .message :-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .message ::-ms-input-placeholder {
+  color: white;
+}
+
+.form .box .message ::placeholder {
+  color: white;
+}
+
+.form .box .more-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.form .box .more-btn .btn {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: none;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 1rem;
+  font-size: 0.8rem;
+  color: white;
+  border: 0.1rem solid rgba(215, 190, 78, 0.909);
+  border-radius: 5rem;
+  cursor: pointer;
+  background: rgba(215, 190, 78, 0.909);
+}
+
+.form .box .more-btn .btn:hover {
+  border: 0.2rem solid rgba(215, 190, 78, 0.909);
+  color: rgba(215, 190, 78, 0.909);
+  background: none;
+}
+
+.served {
+  background: url(../image/bgg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  background-attachment: fixed;
+}
+
+.served .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4rem;
+}
+
+.served .content .info1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-right: 8px;
+  padding: 1.7rem;
+}
+
+.served .content .info1 h3 {
+  font-size: 2.7vw;
+  color: rgba(215, 190, 78, 0.909);
+  font-family: "The Nautigal", cursive;
+}
+
+.served .content .info1 p {
+  font-size: 1.8vw;
+  color: rgba(215, 190, 78, 0.909);
+  text-decoration: underline;
+  -webkit-text-decoration-color: rgba(215, 190, 78, 0.909);
+          text-decoration-color: rgba(215, 190, 78, 0.909);
+  text-underline-offset: 1.5rem;
+}
+
+.footer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(10rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 1rem;
+  padding: 4rem;
+}
+
+.footer .box-container .box {
+  width: 300px;
+}
+
+.footer .box-container .box h3 {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 1.6rem;
+  color: white;
+  letter-spacing: 5px;
+}
+
+.footer .box-container .box p {
+  padding: 1rem 0;
+  font-size: 15px;
+  color: rgba(215, 190, 78, 0.909);
+}
+
+.footer .box-container .box .email {
+  text-align: center;
+  background-color: black;
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.footer .box-container .box .subs {
+  background-color: rgba(215, 190, 78, 0.909);
+  width: 100%;
+  height: 30px;
+}
+
+.footer .box-container .box ::-webkit-input-placeholder {
+  color: white;
+}
+
+.footer .box-container .box :-ms-input-placeholder {
+  color: white;
+}
+
+.footer .box-container .box ::-ms-input-placeholder {
+  color: white;
+}
+
+.footer .box-container .box ::placeholder {
+  color: white;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;
+    background: none;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  .header .navbar.active {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+  .header .navbar a {
+    margin: 2rem;
+    font-size: 2rem;
+    display: block;
+  }
+  .content span {
+    font-size: 8vw;
+  }
+  .content h3 {
+    font-size: 9vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

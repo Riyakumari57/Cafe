@@ -1,0 +1,745 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@300&family=The+Nautigal&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+$color1: white;
+$color2: rgba(215, 190, 78, 0.909);
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1rem;
+}
+
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 9rem;
+
+  &::-webkit-scrollbar {
+    width: 1rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background:rgb(37, 34, 34);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgb(87, 81, 81);
+  }
+}
+
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  // text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+body {
+  background: rgb(37, 34, 34);
+  //   overflow: hidden;
+}
+
+section {
+  padding: 3rem 9%;
+}
+.home {
+  margin: 0;
+  width: 100%;
+  background: url(../image/xx.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  min-height: 90vh;
+  padding-bottom: 5rem;
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: none;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1.3rem 4%;
+
+    .navbar a {
+      font-size: 1rem;
+      color: rgba(215, 190, 78, 0.909);
+      display: inline-block;
+      margin-left: 1.3rem;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+
+  .content {
+    text-align: center;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 200px;
+
+    h3 {
+      font-size: 3.5vw;
+      font-family: "Roboto Condensed", sans-serif;
+      letter-spacing: 10px;
+      color: white;
+    }
+
+    p {
+      margin: 1rem auto;
+      font-size: 1rem;
+      color: wheat;
+      line-height: 2;
+    }
+  }
+}
+
+.logo {
+  margin-right: 20rem;
+  font-size: 2.5rem;
+  color: white;
+  // font-weight: ;
+
+  &:hover {
+    color: rgba(215, 190, 78, 0.909);
+  }
+}
+
+.btnn {
+  background: none;
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  //color: #b88f9d;
+  color: white;
+  border: 0.1rem solid $color1;
+  border-radius: 5rem;
+  cursor: pointer;
+  // background: none;
+
+  &:hover {
+    border: 0.2rem solid $color2;
+    color: $color2;
+    background: none;
+    // font-weight: bolder;
+  }
+}
+
+#menu-btn {
+  font-size: 2.5rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+
+.menu .box-container {
+  @include grid(10rem);
+
+  .box {
+    overflow: hidden;
+    background: none;
+
+    &:hover img {
+      transform: scale(1.1);
+    }
+    .image {
+      height: 15rem;
+      overflow: hidden;
+      width: 100%;
+      //  background: $bg-color;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .contentt {
+      padding: 1rem;
+      text-align: center;
+
+      h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        color: $color1;
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        color: $color2;
+        // line-height: 1;
+      }
+
+      a {
+        font-size: 1rem;
+        color: $color1;
+        text-decoration: underline;
+        text-decoration-color: $color2;
+        text-underline-offset: 0.5em;
+
+        &:hover i {
+          padding-left: 1rem;
+        }
+      }
+      i {
+        padding-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 5rem;
+
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    font-size: 1.1rem;
+    //color: #b88f9d;
+    color: $color1;
+    border: $color1;
+    border-radius: 5rem;
+    cursor: pointer;
+    background: $color2;
+
+    &:hover {
+      // background: $bgg;
+      color: $color2;
+      background: $color1;
+    }
+  }
+
+  .image-left {
+    flex: 1 1 20rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .contenttt {
+    flex: 1 1 20rem;
+    margin-bottom: 5rem;
+    h3 {
+      font-family: "Roboto Condensed", sans-serif;
+      color: $color1;
+      font-size: 2rem;
+    }
+    h5 {
+      color: $color2;
+      font-size: 2rem;
+      letter-spacing: 6px;
+      text-decoration: underline;
+      text-decoration-color: $color2;
+      text-underline-offset: 0.5em;
+      margin-top: 0.5rem;
+      font-family: "The Nautigal", cursive;
+    }
+
+    p {
+      margin-top: 0.5rem;
+      padding: 1rem 0;
+      font-size: 1rem;
+      color: $color1;
+    }
+  }
+}
+
+.services {
+  margin: 0;
+  margin-top: 9rem;
+  width: 100%;
+  background: url(../image/bg.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    span {
+      margin-top: 30px;
+      color: $color1;
+      font-size: 2rem;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 1.7rem;
+      color: $color2;
+      font-family: "The Nautigal", cursive;
+      letter-spacing: 4px;
+      text-decoration: underline;
+      text-decoration-color: $color2;
+      text-underline-offset: 0.4em;
+    }
+  }
+
+  .more-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .btn {
+      align-items: center;
+      background: none;
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      //color: #b88f9d;
+      color: white;
+      border: 0.1rem solid $color2;
+      border-radius: 5rem;
+      cursor: pointer;
+      background: $color2;
+
+      &:hover {
+        border: 0.2rem solid $color2;
+        color: $color2;
+        background: none;
+        // font-weight: bolder;
+      }
+    }
+  }
+}
+.services .box-container {
+  @include grid(17rem);
+  .box {
+    background: none;
+    overflow: hidden;
+
+    .image {
+      overflow: hidden;
+      width: 100%;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        outline: 0.5px solid $color2;
+        outline-offset: -9px;
+      }
+    }
+
+    .content {
+      text-align: center;
+
+      h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        color: $color1;
+        text-decoration: underline;
+        text-decoration-color: $color2;
+        text-underline-offset: 0.6em;
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        color: $color2;
+        // line-height: 1;
+      }
+    }
+  }
+}
+
+.reviews {
+  margin: 0;
+  width: 100%;
+  background: url(../image/coffe2.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  .heading {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    span {
+      margin-top: 30px;
+      color: $color1;
+      font-size: 2rem;
+      font-family: "Roboto Condensed", sans-serif;
+    }
+
+    h1 {
+      margin-top: 30px;
+      font-size: 1.7rem;
+      color: $color2;
+      font-family: "The Nautigal", cursive;
+      letter-spacing: 4px;
+      text-decoration: underline;
+      text-decoration-color: $color2;
+      text-underline-offset: 0.4em;
+    }
+  }
+}
+
+.reviews .box-container {
+  @include grid(15rem);
+  .box {
+    background: rgb(37, 34, 34);
+    overflow: hidden;
+    width: 350px;
+    padding: 2rem;
+
+    .image {
+      overflow: hidden;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+
+      img {
+        border-radius: 50%;
+        height: 50%;
+        width: 50%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      text-align: center;
+      span {
+        font-size: 18px;
+        color: orange;
+      }
+      h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        font-size: 1.3rem;
+        color: $color1;
+        font-family: "The Nautigal", cursive;
+        letter-spacing: 5px;
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 0.9rem;
+        color: $color2;
+
+        // line-height: 1;
+      }
+    }
+  }
+}
+
+.form {
+  margin: 0;
+  width: 100%;
+  background: url(../image/table.jpg) no-repeat;
+  background-size: cover;
+  min-height: 80vh;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 5rem;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    background: rgb(37, 34, 34);
+    width: 450px;
+    .content {
+      padding: 2rem;
+      h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        font-size: 2rem;
+        color: $color1;
+
+        letter-spacing: 5px;
+      }
+
+      p {
+        font-family: "The Nautigal", cursive;
+        text-decoration: underline;
+        text-decoration-color: $color2;
+        padding: 1rem 0;
+        font-size: 2rem;
+        color: $color2;
+
+        // line-height: 1;
+      }
+    }
+
+    .field1 {
+      display: flex;
+      text-align: center;
+      padding: 1rem;
+      .field {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .date,
+      .time,
+      .person {
+        margin-right: 10px;
+      }
+      input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 10px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.3s ease;
+        background-color: black;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+    .field2 {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      padding: 1rem;
+
+      .field {
+        height: 45px;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+      }
+      .name,
+      .email {
+        margin-right: 10px;
+      }
+      input {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 10px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.3s ease;
+        background-color: black;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    .message {
+      padding: 2rem;
+      textarea {
+        text-align: center;
+        height: 200px;
+        width: 100%;
+        border: 1px solid black;
+        border-radius: 6px;
+        outline: none;
+        padding: 0 5px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        transition: all 0.3s ease;
+        background-color: black;
+        padding-top: 50px;
+        resize: none;
+      }
+      ::placeholder {
+        color: white;
+      }
+    }
+
+    .more-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 2rem;
+      .btn {
+        align-items: center;
+        background: none;
+        margin-top: 1rem;
+
+        display: inline-block;
+        padding: 1rem 1rem;
+        font-size: 0.8rem;
+        //color: #b88f9d;
+        color: white;
+        border: 0.1rem solid $color2;
+        border-radius: 5rem;
+        cursor: pointer;
+        background: $color2;
+
+        &:hover {
+          border: 0.2rem solid $color2;
+          color: $color2;
+          background: none;
+          // font-weight: bolder;
+        }
+      }
+    }
+  }
+}
+
+.served {
+  background: url(../image/bgg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  background-attachment: fixed;
+
+  .content {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+    .info1 {
+      align-items: center;
+      text-align: center;
+      margin-right: 8px;
+      padding: 1.7rem;
+      h3 {
+        font-size: 2.7vw;
+        color: $color2;
+        font-family: "The Nautigal", cursive;
+      }
+      p {
+        font-size: 1.8vw;
+        color: $color2;
+        text-decoration: underline;
+        text-decoration-color: $color2;
+        text-underline-offset: 1.5rem;
+      }
+    }
+  }
+}
+
+.footer {
+  justify-content: center;
+  .box-container {
+    @include grid(10rem);
+    padding: 4rem;
+
+    .box {
+      width: 300px;
+      h3 {
+        font-family: "Roboto Condensed", sans-serif;
+        color: white;
+        font-size: 1.6rem;
+        color: $color1;
+
+        letter-spacing: 5px;
+      }
+
+      p {
+        padding: 1rem 0;
+        font-size: 15px;
+        color: $color2;
+
+        // line-height: 1;
+      }
+      .email
+      {
+        text-align: center;
+         background-color: black;
+         width: 100%;
+         height: 40px;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+      .subs
+      {
+        background-color: $color2;
+        width: 100%;
+        height: 30px;
+      }
+      ::placeholder{
+        color: white;
+      }
+    }
+  }
+}
+
+
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  #menu-btn {
+    display: inline-block;
+    //  z-index: 999;
+  }
+  .header {
+    .navbar {
+      position: absolute;
+      top: 99%;
+      left: 0;
+      right: 0;
+      background:none;
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+      &.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      a {
+        margin: 2rem;
+        font-size: 2rem;
+        display: block;
+      }
+    }
+  }
+
+    .content {
+      span {
+        font-size: 8vw;
+      }
+      h3 {
+        font-size: 9vw;
+      }
+    }
+  }
+
